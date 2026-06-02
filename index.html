@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwak Shaik - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-circle top-left"></div>
+        <div class="glow-circle bottom-right"></div>
+    </div>
+    
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">&lt;/&gt; Ashwak<span>.</span></h1>
+            <nav class="center-nav">
+                <a href="#about" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="theme-toggle" id="theme-btn">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="hero-section">
+            <div class="hero-left">
+                <div class="welcome-badge">WELCOME TO MY SPACE</div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Sk. Ashwak</span></h1>
+                <h2 class="hero-subtitle"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                <p class="hero-bio">
+                    A passionate engineering student at Anurag Engineering College. Focused on building clean, high-performance web applications and solving complex algorithmic problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                    <a href="#education" class="btn btn-secondary"><i class="fas fa-graduation-cap"></i> Education</a>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Sk. Ashwak" class="profile-image">
+                    <div class="floating-card top-right-card">
+                        <i class="fas fa-university card-icon-small" style="color: #0097e6;"></i>
+                        <div class="card-text">
+                            <strong>ANRK Student</strong>
+                            <span>Huzurnagar</span>
+                        </div>
+                    </div>
+                    <div class="floating-card bottom-left-card">
+                        <i class="fas fa-calendar-alt card-icon-small" style="color: #0097e6;"></i>
+                        <div class="card-text">
+                            <strong>Born on</strong>
+                            <span>22 March 2005</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-projects" class="projects-section reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" style="border-color: rgba(88, 166, 255, 0.4); box-shadow: 0 5px 20px rgba(88, 166, 255, 0.1);">
+                    <div class="project-header">
+                        <h3 class="project-title">RTFT Fitness Tracker</h3>
+                        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                    </div>
+                    <p class="project-desc">A comprehensive fitness tracking application designed to monitor health metrics, workouts, and overall wellness.</p>
+                    <div class="project-footer">
+                        <div class="project-lang">
+                            <span class="lang-color" style="background-color: #61dafb"></span> <span>React Native</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" style="border-color: rgba(88, 166, 255, 0.4); box-shadow: 0 5px 20px rgba(88, 166, 255, 0.1);">
+                    <div class="project-header">
+                        <h3 class="project-title">Expense Tracker</h3>
+                        <div class="project-icon"><i class="fas fa-wallet"></i></div>
+                    </div>
+                    <p class="project-desc">A personal finance management tool to help users track their daily expenses, analyze spending, and manage budgets efficiently.</p>
+                    <div class="project-footer">
+                        <div class="project-lang">
+                            <span class="lang-color" style="background-color: #f1e05a"></span> <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" style="border-color: rgba(88, 166, 255, 0.4); box-shadow: 0 5px 20px rgba(88, 166, 255, 0.1);">
+                    <div class="project-header">
+                        <h3 class="project-title">CareerConnect</h3>
+                        <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                    </div>
+                    <p class="project-desc">A seamless platform for job searching and recruitment, designed to connect talented individuals with top companies.</p>
+                    <div class="project-footer">
+                        <div class="project-lang">
+                            <span class="lang-color" style="background-color: #4F5D95"></span> <span>PHP / MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section reveal">
+            <h2 class="section-title">Other GitHub Repositories</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Populated by JS -->
+            </div>
+            <div class="loading-spinner" id="projects-loading">
+                <i class="fas fa-circle-notch fa-spin"></i> Loading Projects...
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <h2 class="section-title">Current Focus & Education</h2>
+            <div class="cards-container">
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Present Working Project</h3>
+                    <p class="placeholder-text"><strong>RTFT Fitness Tracker</strong><br>Currently working on developing this fitness tracking application.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Present Learning Course</h3>
+                    <p class="placeholder-text"><strong>Cyber Security</strong><br>Deepening my knowledge and skills in cyber security.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-university"></i></div>
+                    <h3>College Details</h3>
+                    <p class="placeholder-text"><strong>Anurag Engineering College, Kodad</strong><br>Engineering Degree (Finished 2nd Year).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2 class="section-title">My Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-badge"><i class="fas fa-code"></i> C / C++</div>
+                <div class="skill-badge"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-badge"><i class="fab fa-php"></i> PHP</div>
+                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-badge"><i class="fab fa-react"></i> React & React Native</div>
+                <div class="skill-badge"><i class="fab fa-node-js"></i> Node.js & Express</div>
+                <div class="skill-badge"><i class="fas fa-database"></i> SQL & NoSQL</div>
+                <div class="skill-badge"><i class="fas fa-fire"></i> Firebase</div>
+                <div class="skill-badge"><i class="fab fa-google"></i> Google Cloud</div>
+                <div class="skill-badge"><i class="fas fa-paint-brush"></i> Figma & Canva</div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal" style="margin-bottom: 5rem;">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let's collaborate on Cyber projects or anything else!</p>
+                <div class="contact-links">
+                    <a href="tel:7801019486" class="contact-btn"><i class="fas fa-phone-alt"></i> 7801019486</a>
+                    <a href="mailto:ashwakshaik05@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://linkedin.com/in/Shaik.Ashwak" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://instagram.com/ashwak_._2005" target="_blank" class="contact-btn" style="background: linear-gradient(135deg, #E4405F, #FCAF45);"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Ashwak Shaik. Data fetched live from GitHub.</p>
+            <div class="social-links" id="footer-social">
+                <a href="https://github.com/ashwakshaik" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
